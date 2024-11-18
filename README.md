@@ -89,30 +89,56 @@ __Step 4__ -
  ![alt text](/MyScreenshots/SCR-20241117-ujmh.png) 
  - This is how it look s like when IIS is succesfully installed.
  ![alt text](/MyScreenshots/SCR-20241117-ujqy.png)
- ![alt text](/MyScreenshots/SCR-20241117-ukec.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ukkr.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ukoc.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ukrv.png) 
- ![alt text](/MyScreenshots/SCR-20241117-uktz.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ukvz.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ulby.png) 
+ - Next lets downlaod PHPManagerforIIS
+ ![alt text](/MyScreenshots/SCR-20241117-ukec.png)
+ - Go through installation 
+ ![alt text](/MyScreenshots/SCR-20241117-ukkr.png)
+ - Finish installation 
+ ![alt text](/MyScreenshots/SCR-20241117-ukoc.png)
+ - Lets install rewrite_amd64_en next 
+ ![alt text](/MyScreenshots/SCR-20241117-ukrv.png)
+ - Go through installation 
+ ![alt text](/MyScreenshots/SCR-20241117-uktz.png)
+ - Finish installation 
+ ![alt text](/MyScreenshots/SCR-20241117-ukvz.png)
+ - Open the C: drive in file explorer and create a folder called "PHP" 
+ ![alt text](/MyScreenshots/SCR-20241117-ulby.png)
+ - The C: drive should look like this when folder is created. 
  ![alt text](/MyScreenshots/SCR-20241117-ulgd.png) 
+ - Now lets go back to our osTicket Install files and lets extract php-7.3.8
  ![alt text](/MyScreenshots/SCR-20241117-uljw.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ullv.png) 
+ - Select Browse
+ ![alt text](/MyScreenshots/SCR-20241117-ullv.png)
+ - Nviagte to the C: directory and select the PHP folder that was previously made. Then click on Select Folder. 
  ![alt text](/MyScreenshots/SCR-20241117-ulpb.png) 
+ - Should look like this before extracting. Then select Extract.
  ![alt text](/MyScreenshots/SCR-20241117-uluj.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ulws.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ulyd.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ulzy.png) 
- ![alt text](/MyScreenshots/SCR-20241117-umex.png) 
- ![alt text](/MyScreenshots/SCR-20241117-umgn.png) 
- ![alt text](/MyScreenshots/SCR-20241117-umhz.png) 
- ![alt text](/MyScreenshots/SCR-20241117-umka.png) 
- ![alt text](/MyScreenshots/SCR-20241117-umqq.png) 
- ![alt text](/MyScreenshots/SCR-20241117-umup.png) 
- ![alt text](/MyScreenshots/SCR-20241117-umwg.png) 
+ - Next lets install VC_redist
+ ![alt text](/MyScreenshots/SCR-20241117-ulws.png)
+ - Go through installation 
+ ![alt text](/MyScreenshots/SCR-20241117-ulyd.png)
+ - Finish Installation 
+ ![alt text](/MyScreenshots/SCR-20241117-ulzy.png)
+ - Lets install mysql-5.5.62 
+ ![alt text](/MyScreenshots/SCR-20241117-umex.png)
+ - Go through installation 
+ ![alt text](/MyScreenshots/SCR-20241117-umgn.png)
+ - Select __Typical__. 
+ ![alt text](/MyScreenshots/SCR-20241117-umhz.png)
+ - Select install 
+ ![alt text](/MyScreenshots/SCR-20241117-umka.png)
+ - Tick the lauch checkbox and select Finish. 
+ ![alt text](/MyScreenshots/SCR-20241117-umqq.png)
+ - Select Next 
+ ![alt text](/MyScreenshots/SCR-20241117-umup.png)
+ - Select __Standard Configuration__ 
+ ![alt text](/MyScreenshots/SCR-20241117-umwg.png)
+ - Leave as is. Install As Windows Service with check box ticked. 
  ![alt text](/MyScreenshots/SCR-20241117-unau.png) 
- ![alt text](/MyScreenshots/SCR-20241117-unyx.png) 
+ - Modify Security settings
+ 	-Enter the username and password created earlier and select next.
+ ![alt text](/MyScreenshots/SCR-20241117-unyx.png)
+ - Select Execute 
  ![alt text](/MyScreenshots/SCR-20241117-uocp.png) 
  ![alt text](/MyScreenshots/SCR-20241117-uoii.png) 
  ![alt text](/MyScreenshots/SCR-20241117-uouo.png) 

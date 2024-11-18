@@ -64,16 +64,30 @@ __Step 4__ -
  ![alt text](/MyScreenshots/SCR-20241117-ufuy.png) 
 
  ## Installing osTicket Dependency Files
- - Open the folder
- ![alt text](/MyScreenshots/SCR-20241117-ugti.png) 
- ![alt text](/MyScreenshots/SCR-20241117-uhih.png) 
+ - Open the folder and extract all files to the Desktop
+ ![alt text](/MyScreenshots/SCR-20241117-ugti.png)
+ 
+ ![alt text](/MyScreenshots/SCR-20241117-uhih.png)
+ - The zip folder should have 7 files located inside.
+	- These are going to be all of the files we are going to use to install osTicket to our Virtual machine. 
  ![alt text](/MyScreenshots/SCR-20241117-uhml.png) 
+ - osTicket runs on a webserver. So we have to enable our web server for use.
+ - First, go to the control panel
  ![alt text](/MyScreenshots/SCR-20241117-uhuh.png)
+ - Then nagivate to Programs > Uninstall a Program
  ![alt text](/MyScreenshots/SCR-20241117-uiao.png)
+ - Select Turn Windows features on or off on the left hand side.
  ![alt text](/MyScreenshots/SCR-20241117-uild.png) 
+ - Next we want to download Internet Information Services and CGI.
+ - Internet Information Services > Application Development Features > CGI
  ![alt text](/MyScreenshots/SCR-20241117-ujcb.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ujhs.png) 
+ - Press OK and let the changes be applied.
+ ![alt text](/MyScreenshots/SCR-20241117-ujhs.png)
+ - After the changes have been appllied we can test to see if IIS is working properly.
+ - IIS uses 127.0.0.1 since its a localhost.
+ - Below is what 127.0.0.1 looks before downlaoding IIS with CGI. 
  ![alt text](/MyScreenshots/SCR-20241117-ujmh.png) 
+ - This is how it look s like when IIS is succesfully installed.
  ![alt text](/MyScreenshots/SCR-20241117-ujqy.png)
  ![alt text](/MyScreenshots/SCR-20241117-ukec.png) 
  ![alt text](/MyScreenshots/SCR-20241117-ukkr.png) 

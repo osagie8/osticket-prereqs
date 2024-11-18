@@ -18,18 +18,18 @@ This outlines the prerequisites and installation of the open-source help desk ti
 ## Installation Steps
 
 
- - Navigate to the Azure Portal and go to Virtual Machines.</a><h5>
+- Navigate to the Azure Portal and go to Virtual Machines.</a><h5>
 
  ![alt text](/MyScreenshots/SCR-20241117-ucnx.png)
 
  
- - Create a Virtual Machine
+- Create a Virtual Machine
  ![alt text](/MyScreenshots/SCR-20241117-ucti.png)
 
- -  Create a new resource group above the virtual machine. Mine is called osTicket.
+-  Create a new resource group above the virtual machine. Mine is called osTicket.
  ![alt text](/MyScreenshots/SCR-20241117-udck.png) 
 
- - Heres how I configured my Virtual Machine
+- Heres how I configured my Virtual Machine
     - Virtual machine name is osTicket-vm
     - Region used is West US 2.(Use what works for you)
     - Image: Windows 10 Pro

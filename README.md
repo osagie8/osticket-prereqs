@@ -17,8 +17,9 @@ This outlines the prerequisites and installation of the open-source help desk ti
 
 ## Installation Steps
 
+## Setting up our VM
 
-### Navigate to the Azure Portal and go to Virtual Machines.
+- Navigate to the Azure Portal and go to Virtual Machines.
 
  ![alt text](/MyScreenshots/SCR-20241117-ucnx.png)
 
@@ -39,7 +40,7 @@ This outlines the prerequisites and installation of the open-source help desk ti
 
  -  This should deploy the Virtual Machine so we can can connect to it.
  ![alt text](/MyScreenshots/SCR-20241117-uepy.png)
-  
+  ## Connecting to our VM
  ![alt text](/MyScreenshots/SCR-20241117-uest.png) 
  ![alt text](/MyScreenshots/SCR-20241117-uezh.png)
  ![alt text](/MyScreenshots/SCR-20241117-ufci.png) 

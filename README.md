@@ -41,12 +41,23 @@ This outlines the prerequisites and installation of the open-source help desk ti
  -  This should deploy the Virtual Machine so we can can connect to it.
  ![alt text](/MyScreenshots/SCR-20241117-uepy.png)
   ## Connecting to our VM
- ![alt text](/MyScreenshots/SCR-20241117-uest.png) 
+- Nagivate back to the Azure Portal > Virual Machines
+- Copy the Public IP address of the Windows Virtual Machine that was just made. Mine is 74.179.80.249
+ ![alt text](/MyScreenshots/SCR-20241117-uest.png)
+- Open the Windows Remote App
+- Select the "+" on the top right corner
  ![alt text](/MyScreenshots/SCR-20241117-uezh.png)
- ![alt text](/MyScreenshots/SCR-20241117-ufci.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ufmg.png) 
- ![alt text](/MyScreenshots/SCR-20241117-ufrz.png) 
+ - Select Add PC
+ ![alt text](/MyScreenshots/SCR-20241117-ufci.png)
+ - Paste the IP address from the Virtual machine that was created.
+ - This virtual machine will be called osTicketVM
+ ![alt text](/MyScreenshots/SCR-20241117-ufmg.png)
+ - Select the osTicketVM and enter the credentials for the Virtual Machine. 
+ ![alt text](/MyScreenshots/SCR-20241117-ufrz.png)
+ - The Windows Remote App will grant access. 
  ![alt text](/MyScreenshots/SCR-20241117-ufuy.png) 
+
+ ## Installing osTicket Dependecy Files
  ![alt text](/MyScreenshots/SCR-20241117-ugti.png) 
  ![alt text](/MyScreenshots/SCR-20241117-uhih.png) 
  ![alt text](/MyScreenshots/SCR-20241117-uhml.png) 

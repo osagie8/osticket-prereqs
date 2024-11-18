@@ -15,6 +15,12 @@ This outlines the prerequisites and installation of the open-source help desk ti
 
 - Windows 10 (21H2)
 
+## Overview of Steps
+__Step 1__ - Setting up our VM
+__Step 2__ - Connecting to our VM
+__Step 3__ - Installing osTicket Dependency Files
+__Step 4__ - 
+
 ## Installation Steps
 
 ## Setting up our VM
@@ -57,7 +63,8 @@ This outlines the prerequisites and installation of the open-source help desk ti
  - The Windows Remote App will grant access. 
  ![alt text](/MyScreenshots/SCR-20241117-ufuy.png) 
 
- ## Installing osTicket Dependecy Files
+ ## Installing osTicket Dependency Files
+ - Open the folder
  ![alt text](/MyScreenshots/SCR-20241117-ugti.png) 
  ![alt text](/MyScreenshots/SCR-20241117-uhih.png) 
  ![alt text](/MyScreenshots/SCR-20241117-uhml.png) 

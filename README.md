@@ -140,76 +140,141 @@ __Step 4__ -
  ![alt text](/MyScreenshots/SCR-20241117-unyx.png)
  - Select Execute 
  ![alt text](/MyScreenshots/SCR-20241117-uocp.png) 
- ![alt text](/MyScreenshots/SCR-20241117-uoii.png) 
- ![alt text](/MyScreenshots/SCR-20241117-uouo.png) 
+ - Select Finish
+ ![alt text](/MyScreenshots/SCR-20241117-uoii.png)
+ - Now that php manager is installed, Open IIS Services
+ ![alt text](/MyScreenshots/SCR-20241117-uouo.png)
+ - Nagivate to PHP manager. 
  ![alt text](/MyScreenshots/SCR-20241117-upga.png) 
- ![alt text](/MyScreenshots/SCR-20241117-upig.png) 
+ - Select __Register new PHP version__.
+ ![alt text](/MyScreenshots/SCR-20241117-upig.png)
+ - Select Browse or the ... 
  ![alt text](/MyScreenshots/SCR-20241117-uplt.png) 
+ - Go to the C: drive and nagivateto PHP > php-cgi > Open
  ![alt text](/MyScreenshots/SCR-20241117-upqr.png) 
+ - 
  ![alt text](/MyScreenshots/SCR-20241117-uqek.png) 
  ![alt text](/MyScreenshots/SCR-20241117-uqhb.png) 
+ - Select OK.
  ![alt text](/MyScreenshots/SCR-20241117-uqlo.png) 
+ - Then Nagivate to the osTicket connection to restart the server.
  ![alt text](/MyScreenshots/SCR-20241117-uqom.png) 
+ - First we select stop and then we press start.
  ![alt text](/MyScreenshots/SCR-20241117-uqtd.png) 
  ![alt text](/MyScreenshots/SCR-20241117-uqwk.png)
+ - The IIS server has been restarted.
+ - Now lets finally install osTicket.
+ - Nagivate to osTicket Install files and extract filles to desktop
  ![alt text](/MyScreenshots/SCR-20241117-urgg.png)
  ![alt text](/MyScreenshots/SCR-20241118-bacz.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bafy.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bbmy.png) 
+ ![alt text](/MyScreenshots/SCR-20241118-bafy.png)
+ - Open osTicket folder 
+ ![alt text](/MyScreenshots/SCR-20241118-bbmy.png)
+ - Select inetpub > wwwroot 
  ![alt text](/MyScreenshots/SCR-20241118-bbuw.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bcah.png) 
+ ![alt text](/MyScreenshots/SCR-20241118-bcah.png)
+ - Then copy the __Upload__ folder from the osTicket File into the __wwwroot__ folder. 
  ![alt text](/MyScreenshots/SCR-20241118-bcel.png) 
  ![alt text](/MyScreenshots/SCR-20241118-bcta.png) 
+ - Then change the name to "__osTicket__".
  ![alt text](/MyScreenshots/SCR-20241118-bczw.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bdhm.png) 
+ - Restart the webserver again. Stop first
+ ![alt text](/MyScreenshots/SCR-20241118-bdhm.png)
+ - Start the server back up 
  ![alt text](/MyScreenshots/SCR-20241118-bdjr.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bdom.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bgvo.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bhiw.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bhqb.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bhti.png) 
+ - Nagivate to osTicket-vm > Sites > Default Web Site.
+ - Then select Browse *80
+ ![alt text](/MyScreenshots/SCR-20241118-bdom.png)
+ - The osTicket Installer should appear on your browser.
+ - Now lets enable some extensions 
+ ![alt text](/MyScreenshots/SCR-20241118-bgvo.png)
+ - Select PHP Manager
+ ![alt text](/MyScreenshots/SCR-20241118-bhqb.png)
+ - Select enable or disable an extension. 
+ ![alt text](/MyScreenshots/SCR-20241118-bhti.png)
+ - From the list right click and enable __php_imap.dll__,__php_intl.dll__, and __php_opcache.dll__. 
  ![alt text](/MyScreenshots/SCR-20241118-biau.png) 
  ![alt text](/MyScreenshots/SCR-20241118-bihb.png) 
- ![alt text](/MyScreenshots/SCR-20241118-biru.png) 
+ ![alt text](/MyScreenshots/SCR-20241118-biru.png)
+ - This is how it should look like with those three enabled. 
  ![alt text](/MyScreenshots/SCR-20241118-biwi.png) 
+ - The osTicket Installer page should update  with more green checks
  ![alt text](/MyScreenshots/SCR-20241118-bjdd.png) 
  ![alt text](/MyScreenshots/SCR-20241118-bjen.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bjoo.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bjqj.png) 
+ - Navigate to osTicket > include and highlight ost-sampleconfig.php.
+ ![alt text](/MyScreenshots/SCR-20241118-bjoo.png)
+ ![alt text](/MyScreenshots/SCR-20241118-bjqj.png)
+ - Change ost-sampleconfig.php to ost-config.php. 
  ![alt text](/MyScreenshots/SCR-20241118-bkjg.png) 
+ - This is how it should look like
  ![alt text](/MyScreenshots/SCR-20241118-bkop.png) 
+ - Right click and go to properties.
  ![alt text](/MyScreenshots/SCR-20241118-bktf.png) 
+ - Then go to Security.
  ![alt text](/MyScreenshots/SCR-20241118-bkws.png) 
+ - Select __Advanced__
  ![alt text](/MyScreenshots/SCR-20241118-blae.png) 
- ![alt text](/MyScreenshots/SCR-20241118-blfy.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bliw.png) 
+ - Select __Disable Inheritance__
+ ![alt text](/MyScreenshots/SCR-20241118-blfy.png)
+ - Select __Remove all inherited permissions from this object 
+ ![alt text](/MyScreenshots/SCR-20241118-bliw.png)
+ - Select Add 
  ![alt text](/MyScreenshots/SCR-20241118-blon.png) 
+ - Select __Select a principal__
  ![alt text](/MyScreenshots/SCR-20241118-blql.png) 
+ - Then type in "everyone" and click on __Check Names__ and then press OK.
  ![alt text](/MyScreenshots/SCR-20241118-bltt.png) 
- ![alt text](/MyScreenshots/SCR-20241118-blzi.png) 
+ - Then check the __Full Control__ checkbox and Press OK.
+ ![alt text](/MyScreenshots/SCR-20241118-blzi.png)
+ - Then click on __Apply__ and __OK__. 
  ![alt text](/MyScreenshots/SCR-20241118-bmbz.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bmqa.png) 
+ - Press OK.
+ ![alt text](/MyScreenshots/SCR-20241118-bmqa.png)
+ - Navigate back to the web browser to osTicket Installer and select Continue.
+ - Enter credentials that will work for you.
+   - Just make sure the email addresses are different.
  ![alt text](/MyScreenshots/SCR-20241118-bnfn.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bnhb.png) 
+ - The SQL section is left blank. Lets install SQL 
  ![alt text](/MyScreenshots/SCR-20241118-bnin.png) 
+ - Nagivate back to the ___osTicket Installation files__ and go to __HeidiSQL_12.30.6589_Setip__
  ![alt text](/MyScreenshots/SCR-20241118-bnkz.png) 
+ - Go through installation
  ![alt text](/MyScreenshots/SCR-20241118-bnnm.png) 
+ - Finish the installation. Make sure Launch HeidiSQL is checked.
  ![alt text](/MyScreenshots/SCR-20241118-bnrh.png) 
+ - Once HeidiSQL loads, Select __Skip__.
  ![alt text](/MyScreenshots/SCR-20241118-bnur.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bnyn.png) 
+ - Select __New__.
  ![alt text](/MyScreenshots/SCR-20241118-boav.png) 
+ - Type in the creds that was made earlier when seeting up SQL and then Press OK.
  ![alt text](/MyScreenshots/SCR-20241118-bojd.png) 
+ - __Unnamed__ will be created.
  ![alt text](/MyScreenshots/SCR-20241118-bopk.png) 
+ - Right click __Unncamed__ > __Create new__ > __Database__.
  ![alt text](/MyScreenshots/SCR-20241118-bovk.png) 
+ - Name the database "__osTicket__"
  ![alt text](/MyScreenshots/SCR-20241118-bpcd.png) 
- ![alt text](/MyScreenshots/SCR-20241118-bpfv.png) 
+ - __osTicket__ databse will be made in __Unnamed__
+ ![alt text](/MyScreenshots/SCR-20241118-bpfv.png)
+ - Then Nagivate back to the __osTicket Installer__ on the web browser.
+ - Enter the credentials for the SQL Database and press __Install now!__
  ![alt text](/MyScreenshots/SCR-20241118-bpml.png) 
+ - __osTicket__ will load!
  ![alt text](/MyScreenshots/SCR-20241118-bpqg.png) 
+ - Notice how Heidi has been updated with various table in our osTicket database.
  ![alt text](/MyScreenshots/SCR-20241118-bqcc.png) 
+ - osTicket is installed.
  ![alt text](/MyScreenshots/SCR-20241118-bqpj.png) 
+ - Nagivate to the URL in the Address bar to access to Admin side of the Help Desk
  ![alt text](/MyScreenshots/SCR-20241118-brdq.png) 
+ - Login to the Admin Help Desk.
  ![alt text](/MyScreenshots/SCR-20241118-brie.png) 
+ - This is The Admin side of my Help Desk System
  ![alt text](/MyScreenshots/SCR-20241118-bros.png) 
+ - Nagivate to the URL in the Address bar to access to user/client side of the Help Desk
  ![alt text](/MyScreenshots/SCR-20241118-brxy.png)
+ - This is the client side of my Help Desk System
+
+ ## osTicket has been succesfully installed
 
 
